@@ -1,1 +1,23 @@
+<nav class="navbar navbar-expand navbar-light bg-light">
+  <a class="navbar-brand"></a>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link"
+         [routerLink]="['/welcome']"
+         routerLinkActive="active">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"
+         [routerLink]="['/products']"
+         routerLinkActive="active"
+         [routerLinkActiveOptions]="{ exact : true}">Bio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"
+         [routerLink]="['/products', 0, 'edit']"
+         routerLinkActive="active">Details</a>
+    </li>
+  </ul>
+</nav>
+
 <app-bio></app-bio>
