@@ -1,3 +1,4 @@
+<div class="container">
 <h1>Bio</h1>
 <div class="row">
   <div class="col-md-6">
@@ -10,4 +11,13 @@
     I'm Sam. I like coding and learning new things. I have no experience with angular and git, but I'm really liking them.
     I'm excited to see what new things I can learn about web development and version control.
   </div>
+</div>
+
+<div class="row">
+  <div id="blockToHide" *ngIf="isVisible">Wow you found the hidden block.</div>
+
+
+  <button type="button" (click)="onClick()" class="flex btn btn-info">Push me!</button>
+  
+</div>
 </div>
