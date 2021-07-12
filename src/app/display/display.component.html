@@ -7,8 +7,38 @@
     http requests.
   </p>
 
-  <div class="row">
-
+  <div class="table-responsive">
+    <table class="table mb-0"
+           *ngIf="pokemonList && pokemonList.length">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type One</th>
+          <th>Type Two</th>
+          <th>Ability</th>
+          <th>Item</th>
+          <th>Level</th>
+          <th>Move One</th>
+          <th>Move Two</th>
+          <th>Move Three</th>
+          <th>Move Four</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let pokemon of pokemonList">
+          <td>{{ pokemon.name }}</td>
+          <td>{{ pokemon.typeOne}}</td>
+          <td>{{pokemon.typeTwo }}</td>
+          <td>{{pokemon.ability }}</td>
+          <td>{{pokemon.item }}</td>
+          <td>{{pokemon.level }}</td>
+          <td>{{pokemon.moveOne }}</td>
+          <td>{{pokemon.moveTwo }}</td>
+          <td>{{pokemon.moveThree }}</td>
+          <td>{{pokemon.moveFour }}</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 
 </div>
