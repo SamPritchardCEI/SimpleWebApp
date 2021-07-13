@@ -7,6 +7,7 @@ export class PokemonData {
   createDb() {
     const pokemon: Pokemon[] = [
       {
+        id: 1,
         name: 'Dracozolt',
         typeOne: 'Electric',
         typeTwo: 'Dragon',
@@ -19,6 +20,7 @@ export class PokemonData {
         moveFour: 'Earthquake'
       },
       {
+        id: 2,
         name: 'Passimian',
         typeOne: 'Fighting',
         typeTwo: 'None',
@@ -31,6 +33,7 @@ export class PokemonData {
         moveFour: 'Feint'
       },
       {
+        id: 3,
         name: 'Whimsicott',
         typeOne: 'Grass',
         typeTwo: 'Fairy',
@@ -43,6 +46,7 @@ export class PokemonData {
         moveFour: 'Protect'
       },
       {
+        id: 4,
         name: 'Togekiss',
         typeOne: 'Fairy',
         typeTwo: 'Flying',
@@ -55,6 +59,7 @@ export class PokemonData {
         moveFour: 'Yawn'
       },
       {
+        id: 5,
         name: 'Darmanitan',
         typeOne: 'Ice',
         typeTwo: 'None',
@@ -67,6 +72,7 @@ export class PokemonData {
         moveFour: 'Rock Slide'
       },
       {
+        id: 6,
         name: 'Duraludon',
         typeOne: 'Steel',
         typeTwo: 'Dragon',

@@ -11,6 +11,7 @@ import { DisplayComponent } from './display/display.component';
 // Imports for loading & configuring the in-memory web api
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { PokemonData } from './display/pokemon-data';
+import { PokemonEditComponent } from './display/pokemon-edit.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { PokemonData } from './display/pokemon-data';
     BioComponent,
     DetailsComponent,
     DisplayComponent,
+    PokemonEditComponent,
   ],
   imports: [
     BrowserModule,

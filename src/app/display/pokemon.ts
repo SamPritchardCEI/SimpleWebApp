@@ -1,5 +1,6 @@
 /* Defines the pokemon entity */
 export interface Pokemon {
+  id: number;
   name: string;
   typeOne: string;
   typeTwo: string;
