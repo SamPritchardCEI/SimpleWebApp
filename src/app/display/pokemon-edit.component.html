@@ -1,1 +1,72 @@
-<p>pokemon-edit works!</p>
+<div class="card">
+  <div class="card-header">
+    {{pageTitle}}
+  </div>
+
+  <div class="card-body"
+       *ngIf="pokemon">
+
+    <div class="row">
+
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-3">Name:</div>
+          <div class="col-md-6">{{pokemon.name}}</div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">Type One:</div>
+          <div class="col-md-6">{{pokemon.typeOne}}</div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">Type Two:</div>
+          <div class="col-md-6">{{pokemon.typeTwo}}</div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">Ability:</div>
+          <div class="col-md-6">{{pokemon.ability}}</div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">Item:</div>
+          <div class="col-md-6">{{pokemon.item}}</div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">Level:</div>
+          <div class="col-md-6">{{pokemon.level}}</div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">Move One:</div>
+          <div class="col-md-6">{{pokemon.moveOne}}</div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">Move Two:</div>
+          <div class="col-md-6">{{pokemon.moveTwo}}</div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">Move Three:</div>
+          <div class="col-md-6">{{pokemon.moveThree}}</div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">Move Four:</div>
+          <div class="col-md-6">{{pokemon.moveFour}}</div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <button class="btn btn-outline-secondary mr-3"
+                style="width:80px">
+          <i class="fa fa-chevron-left"></i> Back
+        </button>
+        <button class="btn btn-outline-primary"
+                style="width:80px">
+          Edit
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="alert alert-danger"
+     *ngIf="errorMessage">{{errorMessage}}
+</div>

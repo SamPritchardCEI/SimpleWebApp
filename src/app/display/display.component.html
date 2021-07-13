@@ -28,14 +28,20 @@
         <tr *ngFor="let pokemon of pokemonList">
           <td>{{ pokemon.name }}</td>
           <td>{{ pokemon.typeOne}}</td>
-          <td>{{pokemon.typeTwo }}</td>
-          <td>{{pokemon.ability }}</td>
-          <td>{{pokemon.item }}</td>
-          <td>{{pokemon.level }}</td>
-          <td>{{pokemon.moveOne }}</td>
-          <td>{{pokemon.moveTwo }}</td>
-          <td>{{pokemon.moveThree }}</td>
-          <td>{{pokemon.moveFour }}</td>
+          <td>{{ pokemon.typeTwo }}</td>
+          <td>{{ pokemon.ability }}</td>
+          <td>{{ pokemon.item }}</td>
+          <td>{{ pokemon.level }}</td>
+          <td>{{ pokemon.moveOne }}</td>
+          <td>{{ pokemon.moveTwo }}</td>
+          <td>{{ pokemon.moveThree }}</td>
+          <td>{{ pokemon.moveFour }}</td>
+          <td>
+            <button class="btn btn-outline-primary btn-sm"
+                    [routerLink]="['/display', pokemon.id]">
+              Edit
+            </button>
+          </td>
         </tr>
       </tbody>
     </table>
