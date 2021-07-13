@@ -10,7 +10,7 @@ import { Pokemon } from './pokemon';
   providedIn: 'root'
 })
 export class DisplayService {
-  private pokemonUrl = 'api/pokemon';
+  private pokemonUrl = 'api/pokemon'; //NEED TO FIGURE OUT WHY NOT WORKING CANNOT FIND
 
   //constructor, make the http object
   constructor(private http: HttpClient) { }

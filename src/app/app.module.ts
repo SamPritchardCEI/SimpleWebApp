@@ -8,6 +8,10 @@ import { BioComponent } from './bio/bio.component';
 import { DetailsComponent } from './details/details.component';
 import { DisplayComponent } from './display/display.component';
 
+// Imports for loading & configuring the in-memory web api
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { PokemonData } from './display/pokemon-data';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +23,7 @@ import { DisplayComponent } from './display/display.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    InMemoryWebApiModule.forRoot(PokemonData), //import the need for the pokemon data
   ],
   providers: [],
   bootstrap: [AppComponent]
